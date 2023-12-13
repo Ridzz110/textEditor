@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>Icons/bold.png</file>
+        <file>Icons/Copy.bmp</file>
+        <file>Icons/Cut.bmp</file>
+        <file>Icons/DeleteSticky.bmp</file>
+        <file>Icons/favicon.ico</file>
+        <file>Icons/Highlight.bmp</file>
+        <file>Icons/italic.png</file>
+        <file>Icons/New.bmp</file>
+        <file>Icons/Open.bmp</file>
+        <file>Icons/Paste.bmp</file>
+        <file>Icons/Save.bmp</file>
+        <file>Icons/underline.png</file>
+        <file>Icons/font.png</file>
+    </qresource>
+</RCC>

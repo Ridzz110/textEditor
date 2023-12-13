@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>notepad</class>
+ <widget class="QMainWindow" name="notepad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>notepad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>611</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTextEdit" name="textEdit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionPrint"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionpaste"/>
+   </widget>
+   <widget class="QMenu" name="menuFormat">
+    <property name="title">
+     <string>Format</string>
+    </property>
+    <addaction name="actionBold"/>
+    <addaction name="actionItalic"/>
+    <addaction name="actionUnderline"/>
+    <addaction name="actionFontStyle"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuFormat"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/New.bmp</normaloff>:/image/Icons/New.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/Open.bmp</normaloff>:/image/Icons/Open.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/Save.bmp</normaloff>:/image/Icons/Save.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/Save.bmp</normaloff>:/image/Icons/Save.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/Copy.bmp</normaloff>:/image/Icons/Copy.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/Cut.bmp</normaloff>:/image/Icons/Cut.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/bold.png</normaloff>:/image/Icons/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionItalic">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/italic.png</normaloff>:/image/Icons/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Italic</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/underline.png</normaloff>:/image/Icons/underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>Underline</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionFontStyle">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/font.png</normaloff>:/image/Icons/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>FontStyle</string>
+   </property>
+  </action>
+  <action name="actionpaste">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/image/Icons/Paste.bmp</normaloff>:/image/Icons/Paste.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
